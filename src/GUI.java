@@ -34,6 +34,7 @@ public class GUI extends JFrame {
         } catch (IOException e) {
             e.printStackTrace();
             // Handle error - perhaps set a default image or display an error message
+            System.out.println("Could not load the image.");
         }
 
         // Add label
@@ -44,6 +45,8 @@ public class GUI extends JFrame {
         // Add buttons panel
         JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new FlowLayout());
+
+        //Operation buttons for export, import and exit
 
         JButton exportButton = new JButton("Export Game");
         exportButton.addActionListener(e -> {
@@ -68,6 +71,8 @@ public class GUI extends JFrame {
         getContentPane().revalidate();
     }
 
+
+
     public GUI(int option) {
         super("Death Stranding Transfer tool");
         if (option == 1) {
@@ -89,7 +94,7 @@ public class GUI extends JFrame {
                 DefaultListModel<String> listModel = new DefaultListModel<>();
                 File folder;
                 if (osName.contains("Mac")){
-                    folder = new File("/Users/juanherrera/Library/Mobile Documents/iCloud~com~505games~deathstranding"); // Specify the folder path
+                    folder = new File(System.getProperty("user.home") + "/Library/Mobile Documents/iCloud~com~505games~deathstranding"); // Specify the folder path
                 }else if(osName.contains("windows")){
                     folder = new File("C:\\Users\\juan_\\AppData\\Local\\Packages\\505Games.DeathStrandingPC_1.0.0.0_x64__9h6a0fz03f5f0\\SystemAppData\\wgs"); // Specify the folder path
                 } else {

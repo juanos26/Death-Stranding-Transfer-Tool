@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fc03df8-306a-4d41-9e68-8ee6cc45e754" name="Changes" comment="Continuation on another device">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5fc03df8-306a-4d41-9e68-8ee6cc45e754" name="Changes" comment="Continuation on another device" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +54,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +81,7 @@
       <workItem from="1724897772015" duration="2999000" />
       <workItem from="1725072563735" duration="12000" />
       <workItem from="1725072653722" duration="73000" />
-      <workItem from="1725072757032" duration="630000" />
+      <workItem from="1725072757032" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="Continuation on another device">
       <option name="closed" value="true" />
@@ -93,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724897811199</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Continuation on another device">
+      <option name="closed" value="true" />
+      <created>1725073444473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725073444473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,5 +125,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Continuation on another device" />
     <option name="LAST_COMMIT_MESSAGE" value="Continuation on another device" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

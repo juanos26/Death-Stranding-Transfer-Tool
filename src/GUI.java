@@ -95,8 +95,8 @@ public class GUI extends JFrame {
                 File folder;
                 if (osName.contains("Mac")){
                     folder = new File(System.getProperty("user.home") + "/Library/Mobile Documents/iCloud~com~505games~deathstranding"); // Specify the folder path
-                }else if(osName.contains("windows")){
-                    folder = new File("C:\\Users\\juan_\\AppData\\Local\\Packages\\505Games.DeathStrandingPC_1.0.0.0_x64__9h6a0fz03f5f0\\SystemAppData\\wgs"); // Specify the folder path
+                }else if(osName.contains("Windows")){
+                    folder = new File("C:\\Users\\coloc\\AppData\\Local\\KojimaProductions\\DeathStrandingDC\\361171977"); // Specify the folder path
                 } else {
                     folder = null;
                 }
@@ -123,19 +123,24 @@ public class GUI extends JFrame {
                         System.out.println("Exporting: " + selectedValue);
 
                         try {
-                            // Assuming selectedValue is the file name. Adjust if it includes more information.
+                            // Step 1:Assuming selectedValue is the file name. Adjust if it includes more information.
                             String fileName = selectedValue.split(" - ")[0]; // Adjust this line if the format is different.
+                            System.out.println("Step 1: Completed File Name: " + fileName);
 
-                            // Construct the source path
+                            // Step 2: Construct the source path
                             Path sourcePath = Paths.get(folder.getAbsolutePath(), fileName);
+                            System.out.println("Step 2: Completed Source Path: " + sourcePath);
 
-                            // Construct the destination path
-                            String desktopPath = System.getProperty("user.home") + "/Desktop";
+                            // Step 3: Construct the destination path
+                            String desktopPath = System.getProperty("user.home") + File.separator + "Desktop";
                             Path destinationPath = Paths.get(desktopPath, fileName);
+                            System.out.println("Step 3: Completed Destination Path: " + destinationPath);
 
-                            // Copy the file
+                            // Step 4: Copy the file
                             Files.copy(sourcePath, destinationPath, StandardCopyOption.REPLACE_EXISTING);
                             System.out.println("File copied to Desktop successfully.");
+                            System.out.println("Step 4: Completed File Copy.");
+
                         } catch (Exception e) {
                             e.printStackTrace();
                             System.out.println("Failed to copy the file.");
@@ -150,6 +155,8 @@ public class GUI extends JFrame {
         } else if (option==2) {
             // Import Game
             System.out.println("Import Game");
+
+
 
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setSize(400, 400);

@@ -1,9 +1,8 @@
+import javax.swing.SwingUtilities;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-
-        new GUI();
+        // Swing UI work should start on the Event Dispatch Thread.
+        SwingUtilities.invokeLater(TransferToolUI::new);
     }
-
-    // Options: Export Game, Import Game, Exit
 }
